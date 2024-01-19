@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-2bb3156a3bd2c588c255481a318723b7"}, "mark": {"type": "bar", "color": "#FFB6C1"}, "encoding": {"tooltip": [{"field": "IG Reels IDs", "type": "quantitative"}, {"field": "Views Difference", "type": "quantitative"}], "x": {"field": "IG Reels IDs", "type": "ordinal"}, "y": {"field": "Views Difference", "type": "quantitative"}}, "title": "Difference in Views between Youtube and Instagram", "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-2bb3156a3bd2c588c255481a318723b7": [{"Instagram Reels View Count": 640, "Youtube Shorts View Count": 125, "IG Reels IDs": 3251400616176208445, "Views Difference": 515}, {"Instagram Reels View Count": 402, "Youtube Shorts View Count": 226, "IG Reels IDs": 3249215918196717338, "Views Difference": 176}, {"Instagram Reels View Count": 143, "Youtube Shorts View Count": 136, "IG Reels IDs": 3248584906928383586, "Views Difference": 7}, {"Instagram Reels View Count": 558, "Youtube Shorts View Count": 1911, "IG Reels IDs": 3245433812400459061, "Views Difference": -1353}, {"Instagram Reels View Count": 721, "Youtube Shorts View Count": 103, "IG Reels IDs": 3235439322444900419, "Views Difference": 618}, {"Instagram Reels View Count": 334, "Youtube Shorts View Count": 26, "IG Reels IDs": 3225261206271448159, "Views Difference": 308}, {"Instagram Reels View Count": 855, "Youtube Shorts View Count": 2487, "IG Reels IDs": 3202254061750890751, "Views Difference": -1632}, {"Instagram Reels View Count": 781, "Youtube Shorts View Count": 27, "IG Reels IDs": 3202167148666103024, "Views Difference": 754}, {"Instagram Reels View Count": 57, "Youtube Shorts View Count": 5331, "IG Reels IDs": 3216418502804699398, "Views Difference": -5274}, {"Instagram Reels View Count": 139, "Youtube Shorts View Count": 1012, "IG Reels IDs": 3214445506036675076, "Views Difference": -873}, {"Instagram Reels View Count": 66, "Youtube Shorts View Count": 86, "IG Reels IDs": 3213697358737504761, "Views Difference": -20}, {"Instagram Reels View Count": 70, "Youtube Shorts View Count": 831, "IG Reels IDs": 3212200196867306598, "Views Difference": -761}, {"Instagram Reels View Count": 65, "Youtube Shorts View Count": 265, "IG Reels IDs": 3209327711146498977, "Views Difference": -200}, {"Instagram Reels View Count": 60, "Youtube Shorts View Count": 10, "IG Reels IDs": 3208629001185957294, "Views Difference": 50}, {"Instagram Reels View Count": 48, "Youtube Shorts View Count": 1928, "IG Reels IDs": 3207594573580133155, "Views Difference": -1880}, {"Instagram Reels View Count": 965, "Youtube Shorts View Count": 651, "IG Reels IDs": 3206906934376000664, "Views Difference": 314}, {"Instagram Reels View Count": 338, "Youtube Shorts View Count": 247, "IG Reels IDs": 3206125515592441218, "Views Difference": 91}, {"Instagram Reels View Count": 8238, "Youtube Shorts View Count": 321, "IG Reels IDs": 3205335176539681567, "Views Difference": 7917}, {"Instagram Reels View Count": 45, "Youtube Shorts View Count": 47, "IG Reels IDs": 3204808996254374435, "Views Difference": -2}, {"Instagram Reels View Count": 829, "Youtube Shorts View Count": 20, "IG Reels IDs": 3204268613778561849, "Views Difference": 809}, {"Instagram Reels View Count": 236, "Youtube Shorts View Count": 29, "IG Reels IDs": 3202878276619343037, "Views Difference": 207}, {"Instagram Reels View Count": 755, "Youtube Shorts View Count": 5, "IG Reels IDs": 3202728243781537356, "Views Difference": 750}, {"Instagram Reels View Count": 193, "Youtube Shorts View Count": 3028, "IG Reels IDs": 3201952798693844511, "Views Difference": -2835}, {"Instagram Reels View Count": 33, "Youtube Shorts View Count": 38, "IG Reels IDs": 3199828862237432558, "Views Difference": -5}, {"Instagram Reels View Count": 118, "Youtube Shorts View Count": 21, "IG Reels IDs": 3198707689713923186, "Views Difference": 97}, {"Instagram Reels View Count": 244, "Youtube Shorts View Count": 2490, "IG Reels IDs": 3197861652878411278, "Views Difference": -2246}, {"Instagram Reels View Count": 834, "Youtube Shorts View Count": 19, "IG Reels IDs": 3193969600776919224, "Views Difference": 815}, {"Instagram Reels View Count": 836, "Youtube Shorts View Count": 99, "IG Reels IDs": 3193335494372470931, "Views Difference": 737}, {"Instagram Reels View Count": 232, "Youtube Shorts View Count": 91, "IG Reels IDs": 3192121698723073882, "Views Difference": 141}, {"Instagram Reels View Count": 287, "Youtube Shorts View Count": 13, "IG Reels IDs": 3191960977448342826, "Views Difference": 274}, {"Instagram Reels View Count": 48, "Youtube Shorts View Count": 818, "IG Reels IDs": 3186758949793156187, "Views Difference": -770}, {"Instagram Reels View Count": 365, "Youtube Shorts View Count": 292, "IG Reels IDs": 3186318734754357855, "Views Difference": 73}, {"Instagram Reels View Count": 48, "Youtube Shorts View Count": 2535, "IG Reels IDs": 3183943439313452357, "Views Difference": -2487}, {"Instagram Reels View Count": 37, "Youtube Shorts View Count": 741, "IG Reels IDs": 3178172144344783573, "Views Difference": -704}, {"Instagram Reels View Count": 469, "Youtube Shorts View Count": 570, "IG Reels IDs": 3175357351040868903, "Views Difference": -101}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

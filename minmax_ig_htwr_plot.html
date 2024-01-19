@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-457e7cb14d0eb66ec65a6795f1eb0691"}, "mark": {"type": "circle", "size": 60}, "encoding": {"color": {"field": "Likes", "scale": {"scheme": "plasma"}, "type": "quantitative"}, "tooltip": [{"field": "Instagram Reels Hashtag to Words Ratio", "type": "quantitative"}, {"field": "Views", "type": "quantitative"}], "x": {"field": "Instagram Reels Hashtag to Words Ratio", "type": "quantitative"}, "y": {"field": "Views", "type": "quantitative"}}, "params": [{"name": "param_60", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Views against Hashtag to Words Ratio in Captions (Scaled II)", "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-457e7cb14d0eb66ec65a6795f1eb0691": [{"Instagram Reels Hashtag to Words Ratio": 0.1637630662020906, "Views": 0.07397928092626446, "Likes": 298}, {"Instagram Reels Hashtag to Words Ratio": 0.06941838649155724, "Views": 0.0449725776965265, "Likes": 271}, {"Instagram Reels Hashtag to Words Ratio": 0.47967479674796754, "Views": 0.013406459475929309, "Likes": 44}, {"Instagram Reels Hashtag to Words Ratio": 0.021788617886178863, "Views": 0.0639853747714808, "Likes": 203}, {"Instagram Reels Hashtag to Words Ratio": 1.0, "Views": 0.08385131017672151, "Likes": 149}, {"Instagram Reels Hashtag to Words Ratio": 0.7398373983739838, "Views": 0.03668494820231566, "Likes": 107}, {"Instagram Reels Hashtag to Words Ratio": 0.6097560975609757, "Views": 0.10018281535648994, "Likes": 202}, {"Instagram Reels Hashtag to Words Ratio": 0.3279132791327914, "Views": 0.09116392443631931, "Likes": 229}, {"Instagram Reels Hashtag to Words Ratio": 0.047804878048780496, "Views": 0.0029250457038391218, "Likes": 15}, {"Instagram Reels Hashtag to Words Ratio": 0.11111111111111113, "Views": 0.012918951858622789, "Likes": 40}, {"Instagram Reels Hashtag to Words Ratio": 0.15447154471544716, "Views": 0.0040219378427787935, "Likes": 15}, {"Instagram Reels Hashtag to Words Ratio": 0.5663956639566397, "Views": 0.0045094454600853135, "Likes": 24}, {"Instagram Reels Hashtag to Words Ratio": 0.20505871725383923, "Views": 0.0039000609384521627, "Likes": 16}, {"Instagram Reels Hashtag to Words Ratio": 0.1494684177611007, "Views": 0.0032906764168190127, "Likes": 21}, {"Instagram Reels Hashtag to Words Ratio": 0.3062330623306233, "Views": 0.001828153564899451, "Likes": 12}, {"Instagram Reels Hashtag to Words Ratio": 0.20092915214866439, "Views": 0.11358927483241925, "Likes": 178}, {"Instagram Reels Hashtag to Words Ratio": 0.017163504968383016, "Views": 0.037172455819622176, "Likes": 70}, {"Instagram Reels Hashtag to Words Ratio": 0.13821138211382117, "Views": 1.0, "Likes": 1062}, {"Instagram Reels Hashtag to Words Ratio": 0.06204535729567822, "Views": 0.0014625228519195609, "Likes": 15}, {"Instagram Reels Hashtag to Words Ratio": 0.15447154471544716, "Views": 0.09701401584399756, "Likes": 342}, {"Instagram Reels Hashtag to Words Ratio": 0.030303030303030297, "Views": 0.024741011578305907, "Likes": 54}, {"Instagram Reels Hashtag to Words Ratio": 0.11544715447154472, "Views": 0.08799512492382693, "Likes": 272}, {"Instagram Reels Hashtag to Words Ratio": 0.1485587583148559, "Views": 0.019500304692260814, "Likes": 23}, {"Instagram Reels Hashtag to Words Ratio": 0.4276422764227643, "Views": 0.0, "Likes": 9}, {"Instagram Reels Hashtag to Words Ratio": 0.3170731707317074, "Views": 0.010359536867763558, "Likes": 50}, {"Instagram Reels Hashtag to Words Ratio": 0.47967479674796754, "Views": 0.02571602681291895, "Likes": 53}, {"Instagram Reels Hashtag to Words Ratio": 0.0894308943089431, "Views": 0.0976234003656307, "Likes": 169}, {"Instagram Reels Hashtag to Words Ratio": 0.13673318551367333, "Views": 0.09786715417428396, "Likes": 222}, {"Instagram Reels Hashtag to Words Ratio": 0.28455284552845533, "Views": 0.024253503960999387, "Likes": 47}, {"Instagram Reels Hashtag to Words Ratio": 0.05117168818747012, "Views": 0.030956733698964047, "Likes": 54}, {"Instagram Reels Hashtag to Words Ratio": 0.10569105691056913, "Views": 0.001828153564899451, "Likes": 15}, {"Instagram Reels Hashtag to Words Ratio": 0.012912482065997127, "Views": 0.04046313223644119, "Likes": 102}, {"Instagram Reels Hashtag to Words Ratio": 0.34959349593495936, "Views": 0.001828153564899451, "Likes": 14}, {"Instagram Reels Hashtag to Words Ratio": 0.0, "Views": 0.00048750761730652, "Likes": 12}, {"Instagram Reels Hashtag to Words Ratio": 0.0894308943089431, "Views": 0.05313833028641072, "Likes": 136}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

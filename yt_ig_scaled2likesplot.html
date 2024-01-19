@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-4fc0e372b285f8dddabc44e9c95bde86"}, "mark": {"type": "circle", "color": "#32CD32", "size": 60}, "encoding": {"tooltip": [{"field": "Youtube Shorts Like Count", "type": "quantitative"}, {"field": "Instagram Reels Like Count", "type": "quantitative"}], "x": {"field": "Instagram Reels Like Count", "type": "quantitative"}, "y": {"field": "Youtube Shorts Like Count", "type": "quantitative"}}, "params": [{"name": "param_58", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Like counts on Youtube against Instagram (Scaled II)", "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-4fc0e372b285f8dddabc44e9c95bde86": [{"Instagram Reels Like Count": 0.2744539411206078, "Youtube Shorts Like Count": 0.04830917874396135, "IG Reels IDs": 3251400616176208445}, {"Instagram Reels Like Count": 0.24881291547958215, "Youtube Shorts Like Count": 0.07246376811594203, "IG Reels IDs": 3249215918196717338}, {"Instagram Reels Like Count": 0.0332383665716999, "Youtube Shorts Like Count": 0.08695652173913043, "IG Reels IDs": 3248584906928383586}, {"Instagram Reels Like Count": 0.18423551756885093, "Youtube Shorts Like Count": 0.7536231884057971, "IG Reels IDs": 3245433812400459061}, {"Instagram Reels Like Count": 0.13295346628679963, "Youtube Shorts Like Count": 0.05314009661835749, "IG Reels IDs": 3235439322444900419}, {"Instagram Reels Like Count": 0.09306742640075974, "Youtube Shorts Like Count": 0.00966183574879227, "IG Reels IDs": 3225261206271448159}, {"Instagram Reels Like Count": 0.18328584995251662, "Youtube Shorts Like Count": 0.43961352657004826, "IG Reels IDs": 3202254061750890751}, {"Instagram Reels Like Count": 0.20892687559354228, "Youtube Shorts Like Count": 0.0, "IG Reels IDs": 3202167148666103024}, {"Instagram Reels Like Count": 0.005698005698005697, "Youtube Shorts Like Count": 1.0, "IG Reels IDs": 3216418502804699398}, {"Instagram Reels Like Count": 0.029439696106362778, "Youtube Shorts Like Count": 0.16908212560386474, "IG Reels IDs": 3214445506036675076}, {"Instagram Reels Like Count": 0.005698005698005697, "Youtube Shorts Like Count": 0.024154589371980676, "IG Reels IDs": 3213697358737504761}, {"Instagram Reels Like Count": 0.014245014245014245, "Youtube Shorts Like Count": 0.0966183574879227, "IG Reels IDs": 3212200196867306598}, {"Instagram Reels Like Count": 0.006647673314339981, "Youtube Shorts Like Count": 0.04830917874396135, "IG Reels IDs": 3209327711146498977}, {"Instagram Reels Like Count": 0.011396011396011395, "Youtube Shorts Like Count": 0.004830917874396135, "IG Reels IDs": 3208629001185957294}, {"Instagram Reels Like Count": 0.0028490028490028487, "Youtube Shorts Like Count": 0.2222222222222222, "IG Reels IDs": 3207594573580133155}, {"Instagram Reels Like Count": 0.16049382716049385, "Youtube Shorts Like Count": 0.10628019323671498, "IG Reels IDs": 3206906934376000664}, {"Instagram Reels Like Count": 0.05792972459639127, "Youtube Shorts Like Count": 0.033816425120772944, "IG Reels IDs": 3206125515592441218}, {"Instagram Reels Like Count": 1.0, "Youtube Shorts Like Count": 0.043478260869565216, "IG Reels IDs": 3205335176539681567}, {"Instagram Reels Like Count": 0.005698005698005697, "Youtube Shorts Like Count": 0.00966183574879227, "IG Reels IDs": 3204808996254374435}, {"Instagram Reels Like Count": 0.3162393162393162, "Youtube Shorts Like Count": 0.004830917874396135, "IG Reels IDs": 3204268613778561849}, {"Instagram Reels Like Count": 0.042735042735042736, "Youtube Shorts Like Count": 0.0, "IG Reels IDs": 3202878276619343037}, {"Instagram Reels Like Count": 0.24976258309591645, "Youtube Shorts Like Count": 0.0, "IG Reels IDs": 3202728243781537356}, {"Instagram Reels Like Count": 0.013295346628679962, "Youtube Shorts Like Count": 0.5120772946859903, "IG Reels IDs": 3201952798693844511}, {"Instagram Reels Like Count": 0.0, "Youtube Shorts Like Count": 0.004830917874396135, "IG Reels IDs": 3199828862237432558}, {"Instagram Reels Like Count": 0.0389363722697056, "Youtube Shorts Like Count": 0.00966183574879227, "IG Reels IDs": 3198707689713923186}, {"Instagram Reels Like Count": 0.04178537511870846, "Youtube Shorts Like Count": 0.6570048309178743, "IG Reels IDs": 3197861652878411278}, {"Instagram Reels Like Count": 0.1519468186134853, "Youtube Shorts Like Count": 0.014492753623188404, "IG Reels IDs": 3193969600776919224}, {"Instagram Reels Like Count": 0.2022792022792023, "Youtube Shorts Like Count": 0.024154589371980676, "IG Reels IDs": 3193335494372470931}, {"Instagram Reels Like Count": 0.03608736942070276, "Youtube Shorts Like Count": 0.014492753623188404, "IG Reels IDs": 3192121698723073882}, {"Instagram Reels Like Count": 0.042735042735042736, "Youtube Shorts Like Count": 0.004830917874396135, "IG Reels IDs": 3191960977448342826}, {"Instagram Reels Like Count": 0.005698005698005697, "Youtube Shorts Like Count": 0.16908212560386474, "IG Reels IDs": 3186758949793156187}, {"Instagram Reels Like Count": 0.08831908831908833, "Youtube Shorts Like Count": 0.07246376811594203, "IG Reels IDs": 3186318734754357855}, {"Instagram Reels Like Count": 0.004748338081671414, "Youtube Shorts Like Count": 0.2077294685990338, "IG Reels IDs": 3183943439313452357}, {"Instagram Reels Like Count": 0.0028490028490028487, "Youtube Shorts Like Count": 0.13043478260869565, "IG Reels IDs": 3178172144344783573}, {"Instagram Reels Like Count": 0.12060778727445395, "Youtube Shorts Like Count": 0.04830917874396135, "IG Reels IDs": 3175357351040868903}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

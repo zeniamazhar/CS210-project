@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "size": 60}, "encoding": {"color": {"field": "Likes", "scale": {"scheme": "redgrey"}, "type": "quantitative"}, "tooltip": [{"field": "Youtube Shorts Hashtag to Words Ratio", "type": "quantitative"}, {"field": "Views", "type": "quantitative"}], "x": {"field": "Youtube Shorts Hashtag to Words Ratio", "type": "quantitative"}, "y": {"field": "Views", "type": "quantitative"}}, "name": "view_14", "title": "Views against Hashtag to Words Ratio in Titles"}, {"mark": {"type": "line"}, "encoding": {"color": {"field": "Likes", "scale": {"scheme": "redgrey"}, "type": "quantitative"}, "tooltip": [{"field": "Youtube Shorts Hashtag to Words Ratio", "type": "quantitative"}, {"field": "Views", "type": "quantitative"}], "x": {"field": "Youtube Shorts Hashtag to Words Ratio", "type": "quantitative"}, "y": {"field": "Views", "type": "quantitative"}}, "title": "Views against Hashtag to Words Ratio in Titles", "transform": [{"on": "Youtube Shorts Hashtag to Words Ratio", "regression": "Views"}]}], "data": {"name": "data-04b43dca47e65ecf990d51920c036387"}, "params": [{"name": "param_63", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales", "views": ["view_14"]}], "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-04b43dca47e65ecf990d51920c036387": [{"Youtube Shorts Hashtag to Words Ratio": 4.0, "Likes": 10, "Views": 125}, {"Youtube Shorts Hashtag to Words Ratio": 3.3333333333333335, "Likes": 15, "Views": 226}, {"Youtube Shorts Hashtag to Words Ratio": 4.5, "Likes": 18, "Views": 136}, {"Youtube Shorts Hashtag to Words Ratio": 3.0, "Likes": 156, "Views": 1911}, {"Youtube Shorts Hashtag to Words Ratio": 5.0, "Likes": 11, "Views": 103}, {"Youtube Shorts Hashtag to Words Ratio": 3.3333333333333335, "Likes": 2, "Views": 26}, {"Youtube Shorts Hashtag to Words Ratio": 1.2857142857142858, "Likes": 91, "Views": 2487}, {"Youtube Shorts Hashtag to Words Ratio": 10.0, "Likes": 0, "Views": 27}, {"Youtube Shorts Hashtag to Words Ratio": 3.3333333333333335, "Likes": 207, "Views": 5331}, {"Youtube Shorts Hashtag to Words Ratio": 1.2857142857142858, "Likes": 35, "Views": 1012}, {"Youtube Shorts Hashtag to Words Ratio": 4.5, "Likes": 5, "Views": 86}, {"Youtube Shorts Hashtag to Words Ratio": 1.6, "Likes": 20, "Views": 831}, {"Youtube Shorts Hashtag to Words Ratio": 4.5, "Likes": 10, "Views": 265}, {"Youtube Shorts Hashtag to Words Ratio": 1.0, "Likes": 1, "Views": 10}, {"Youtube Shorts Hashtag to Words Ratio": 5.0, "Likes": 46, "Views": 1928}, {"Youtube Shorts Hashtag to Words Ratio": 1.4, "Likes": 22, "Views": 651}, {"Youtube Shorts Hashtag to Words Ratio": 1.2, "Likes": 7, "Views": 247}, {"Youtube Shorts Hashtag to Words Ratio": 4.5, "Likes": 9, "Views": 321}, {"Youtube Shorts Hashtag to Words Ratio": 8.0, "Likes": 2, "Views": 47}, {"Youtube Shorts Hashtag to Words Ratio": 0.5454545454545454, "Likes": 1, "Views": 20}, {"Youtube Shorts Hashtag to Words Ratio": 2.0, "Likes": 0, "Views": 29}, {"Youtube Shorts Hashtag to Words Ratio": 1.3333333333333333, "Likes": 0, "Views": 5}, {"Youtube Shorts Hashtag to Words Ratio": 1.5, "Likes": 106, "Views": 3028}, {"Youtube Shorts Hashtag to Words Ratio": 3.0, "Likes": 1, "Views": 38}, {"Youtube Shorts Hashtag to Words Ratio": 3.3333333333333335, "Likes": 2, "Views": 21}, {"Youtube Shorts Hashtag to Words Ratio": 1.0, "Likes": 136, "Views": 2490}, {"Youtube Shorts Hashtag to Words Ratio": 0.6, "Likes": 3, "Views": 19}, {"Youtube Shorts Hashtag to Words Ratio": 0.875, "Likes": 5, "Views": 99}, {"Youtube Shorts Hashtag to Words Ratio": 5.0, "Likes": 3, "Views": 91}, {"Youtube Shorts Hashtag to Words Ratio": 0.6363636363636364, "Likes": 1, "Views": 13}, {"Youtube Shorts Hashtag to Words Ratio": 1.0, "Likes": 35, "Views": 818}, {"Youtube Shorts Hashtag to Words Ratio": 1.0, "Likes": 15, "Views": 292}, {"Youtube Shorts Hashtag to Words Ratio": 3.0, "Likes": 43, "Views": 2535}, {"Youtube Shorts Hashtag to Words Ratio": 0.7777777777777778, "Likes": 27, "Views": 741}, {"Youtube Shorts Hashtag to Words Ratio": 1.1666666666666667, "Likes": 10, "Views": 570}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
