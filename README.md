@@ -32,7 +32,7 @@ Time series plots were made for the likes, views and comments of the Reels again
 ![ig_views_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/f5f2db5d-bed9-4080-a67f-4b99d767abf4)
 
 
-When comparing the 3 graphs, it can be seen that the views follow a very similar pattern to the number of likes. This is expected since getting a higher number of views would increase the likelihood of the video getting likes, as it is exposed to more people. A peak is seen at the same point for the same video in both graphs, which received 1062 likes and 8238 views, making it an outlier in both cases. The comments follow a different trend, with the peaks being present at 9 comments for 2 videos. This may be because I comment on the videos to reply to other people's comments, and sometimes this leads to the people replying to the responses I write, so the number of comments increases and this has little to do with the actual number of people that watched the video and commented on them. 
+When comparing the 3 graphs, it can be seen that the views follow a very similar pattern to the number of likes. This is expected since getting a higher number of views would increase the likelihood of the video getting likes, as it is exposed to more people. A peak is seen at the same point for the same video in both graphs, which received 1062 likes and 8238 views, making it an outlier in both cases. The comments follow a different trend, with the peaks being present at 9 comments for 2 videos, one of which is the one which caused a peak to form in the time series for the likes and views. This may be because I comment on the videos to reply to other people's comments, and sometimes this leads to the people replying to the responses I write, so the number of comments increases and this has little to do with the actual number of people that watched the video and commented on them.
 
 ## Performance of the videos on Youtube Shorts
 Time series plots were made for the likes, views and comments of the Shorts against the order in which they were uploaded in order to visualize the performance.
@@ -43,10 +43,14 @@ Time series plots were made for the likes, views and comments of the Shorts agai
 
 ![yt_views_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/19d75de7-bf96-4719-83cd-1754d0de7884)
 
+In the case of Youtube Shorts, all 3 graphs follow a similar trend, with the trend of the number of likes and views being the most similar. Once again, the highest peaks observed for the views and likes are for the same video. 
+
 
 ## Comparing the performance of the videos on both platforms 
 
 Firstly, the mean, standard deviation, min and max of the likes, comments, and views of the videos were observed and compared between Youtube and Instagram. 
+
+Interestingly, the videos that performed well on both platforms are completely different, with the video for which the highest peak was observed on Instagram Reels with 8238 views and 1062 likes, only got 651 views and 22 likes on Youtube Shorts. Similarly, the highest peak observed for the video on Youtube Shorts with 5331 views and 207 likes, which only got 66 views and 15 likes on Instagram Reels.
 
 
 ### The hypothesis
