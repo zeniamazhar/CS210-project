@@ -15,7 +15,7 @@ I hypothesized there will be a significant difference in the performance of the 
 ## Data Extraction
 Youtube shorts analytics were obtained by requesting the data from [Youtube Data API v3](https://console.cloud.google.com/marketplace/product/google/youtube.googleapis.com?pli=1&project=youtubeanalytics-407616). This was done by by using the video IDs of the shorts found at the end of the URL of each of the shorts. The data obtained consisted of the video IDs, likes, dislikes, comments and views, which were then converted into a Pandas DataFrame. 
 
-Instagram reels analytics were obtained by using [InstaLoader](https://pypi.org/project/instaloader/). In a similar manner to the Youtube Data API, this was done by specifying the shortcodes found at the end of the URLs of the target reels. The data obtained consisted of Media IDs, likes, comments and views, which were then combined to make another Pandas DataFrame.
+Instagram reels analytics were obtained by using an API from PyPi: [InstaLoader](https://pypi.org/project/instaloader/). In a similar manner to the Youtube Data API, this was done by specifying the shortcodes found at the end of the URLs of the target reels. The data obtained consisted of Media IDs, likes, comments and views, which were then combined to make another Pandas DataFrame.
 
 ## Analysis and Discussion
 
@@ -68,11 +68,41 @@ A similar table can be created for the number of views observed for the videos o
 | Max                   | 8238.0          | 5331.0         |
 | Min                   | 33.0            | 5.0            |
 
-In the case of views, the standard deviation is very high for both Instagram Reels and Youtube Shorts. It is to be mentioned that the mean of Youtube Shorts is higher in this case than it is for Instagram Reels. So, this means that the number of people that like the videos is higher on Instagram Reels than on Youtube Shorts, given that the mean number of views is higher on Youtube, which correlates with the videos being exposed to more people. This may mean that Instagram shows the videos to the target audience more than Youtube. It's also possible that this difference arises because the people that watch Youtube shorts watch them multiple times rather than just once, so the number of people the videos are exposed to aren't much different between the two platforms.
+In the case of views, the standard deviation is very high for both Instagram Reels and Youtube Shorts. It is to be mentioned that the mean of Youtube Shorts is higher in this case than it is for Instagram Reels. So, this means that the number of people that like the videos is higher on Instagram Reels than on Youtube Shorts, given that the mean number of views is higher on Youtube, which correlates with the videos being exposed to more people. This may mean that Instagram shows the videos to the target audience more than Youtube. It's also possible that this difference arises because the people that watch Youtube shorts watch them multiple times rather than just once, so the number of people the videos are exposed to aren't much different between the two platforms. It is also to be mentioned that the standard deviation as well as the min and max values of the number of views are higher for Instagram Reels than Youtube Shorts, meaning that the data varies more in the case of Instagram Reels for the views, which was the case for the number of likes as well.
 
-Interestingly, as can be seen in the time series graphs, the videos that performed well on both platforms are completely different, with the video for which the highest peak was observed on Instagram Reels with 8238 views and 1062 likes, only got 651 views and 22 likes on Youtube Shorts. Similarly, the highest peak observed for the video on Youtube Shorts with 5331 views and 207 likes, which only got 66 views and 15 likes on Instagram Reels. This can be better observed by dividing the likes by the views for each of the videos on both platforms and plotting a scatterplot between them, as I have done below.
+Interestingly, as can be seen in the time series graphs above, the videos that performed well on both platforms are completely different, with the video for which the highest peak was observed on Instagram Reels with 8238 views and 1062 likes, only got 651 views and 22 likes on Youtube Shorts. Similarly, the highest peak observed for the video on Youtube Shorts with 5331 views and 207 likes, which only got 66 views and 15 likes on Instagram Reels. This can be better observed by dividing the likes by the views for each of the videos on both platforms and plotting a scatterplot between them, as I have done below.
 
 ![ig_yt_lpv_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/cc6efe77-267a-42a7-b543-59f31f69f155)
+
+There is a weak positive correlation between the likes per view for the videos on Instagram Reels and Youtube Shorts. The Spearman rank correlation value for this correlation is about 0.17, and the p-value is about 0.3 (which is higher than 0.05, which shows this correlation is insignificant). This shows that there isn't much of a correlation between the two variables, thereby showing that the performance of each of the videos is very different on the two platforms.
+
+## Relationship Between Number of Views and Hashtags
+Many creators advise others to use hashtags in order to reach the target audience and have more people engage with the content. By counting the number of hashtags in the captions/titles of the videos on the two platforms respectively, I plotted the number of views gained against the number of hashtags to understand the relationship between them. 
+
+![visualization (5)](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/ff798760-a5e4-4f68-b6a9-12a2599ddce4)
+
+
+![visualization (4)](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/e6e1b620-90d8-4640-bdbc-2cc551087263)
+
+
+It can be seen that there is a certain trend in both cases, where the number of hashtags being too low or too high results in lower number of views, while somewhere in the middle seems to yield the highest number of views. In the case of Youtube Shorts, 8 hashtags tends to work the best, while in the case of Instagram Reels, around 10 seems to work the best. It is to be noted that I may have used 8 and 10 hashtags on Youtube and Instagram (respectively) more often than the others, making it so the number of datapoints for these hashtags is higher, hence there is a higher likelihood of getting more views on them than the others. The mode number of hashtags I used on Youtube is 8.5, and the mean number of hashtags I used on Instagram is 11, which are numbers that are very close to 8 and 10 respectively. 
+
+After making these observations, I decided to go a step further and see if there is any relationship between the performance and the ratio of hashtags to words (obtained by calculating the number of hashtags divided by the number of words) in the captions/titles of the videos on Youtube and Instagram. The following plots were made for this purpose. 
+
+![yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/deff86b8-8967-440b-8098-e056fcfab609)
+
+![ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/b5b4af20-c69c-4334-b6be-5a70ddfc6ff5)
+
+In order to get a better idea of the relationships between them, the contribution of the outliers was lowered (MinMaxScaler), or were eliminated entirely (RobustScaler), in the following plots. Please note that the plots with 'Scaled' in the title are the plots scaled with RobustScaler and those with 'Scaled II' in their titles are scaled with MinMaxScaler.
+
+| Scaler Used  | Instagram Reels                                                                                                                    | Youtube Shorts                                                                                                                     |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| MinMaxScaler | ![minmax_ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/a25b0490-c64d-48a4-9b06-fe4c69eb5762) | ![minmax_yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/40c088aa-a309-4701-a132-799c44e29013) |
+| RobustScaler | ![robust_ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/b1884711-df76-40fc-9dcf-1693a5a0e974) | ![robust_yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/080f5cb5-f28d-4647-bb24-f2e51ef460ad) |
+
+
+
+
 
 ### The hypothesis
 Spearman’s rank correlation was used to determine the correlation between the views of the videos on Instagram Reels and on Youtube Shorts. It is known that a p-value higher than 0.05 indicates that there's a high likelihood of the correlation being produced by chance. 
