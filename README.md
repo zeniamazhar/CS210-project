@@ -101,6 +101,16 @@ The relationship between the number of likes and views obtained on Youtube and I
 
 | ![yt_ig_likesplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/3d1b5a2c-7838-4680-a4a6-c227a09b7809) | ![yt_ig_viewsplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/8addd1d4-6d59-4d4e-b0cd-7067a9af0354) |
 
+Spearman's rank correlation can be done here in order to understand if there is a significant correlation between the number of likes observed on both platforms, as well as the number of views observed on both platforms. I picked Spearman's rank correlation rather than Pearson's Rank Correlation since the data isn't normally distributed in either case. Doing this resulted in a correlation value of -0.185 for the number of views observed between instagram and youtube, with a p-value of 0.29. The Spearman's Rank correlation value for the number of likes was -0.25, with a p-value of 0.15. In both cases, the p-value is higher than 0.05, therefore the hypothesis that there is a difference between them can't be accepted. Hence, it's possible that there isn't any correlation between the performance of the videos on the two platforms. 
+
+A Mann-Whitney U test can be performed to understand if there is a significant difference between the performance of the videos on the two platforms. This test was performed for the number of views, the number of likes on both platforms. Additionally, a T-test was performed on the likes per view, the results of which have been included in the table below, along with the Mann-Whitney U test statistics of the number of likes and number of views of the two platforms.
+
+|           | Number of Likes  | Number of Views  | Likes Per View |
+|-----------|------------------|------------------|----------------|
+| Statistic | 1002.0           | 654.0            | 1221.0         |
+| p-value   | 4.8e-06          | 0.6              | 9.2e-13        |
+
+It can be seen that the only signficant p-values here belongs to the number of likes and likes per view, since both are lower than 0.05. This means we can reject the null hypothesis that there isn't a significant difference between the performance of the two platforms, since the p-value of the likes per view is significant. The mean of the likes per view observed for each platform can be compared to understand which direction this difference lies in, which would allow us to understand which platform is performing better: The mean of the likes per view of Instagram was 0.28, while that of Youtube was 0.05. Hence, the null hypothesis of this project stating that there isn't a significant difference between the performance of the videos on the two platforms can be rejected, and the alternative hypothesis stating that the videos are performing better on Instagram Reels might indeed be true. 
 
 ## Relationship Between Number of Views and Hashtags
 Many creators advise others to use hashtags in order to reach the target audience and have more people engage with the content. By counting the number of hashtags in the captions/titles of the videos on the two platforms respectively, I plotted the number of views gained against the number of hashtags to understand the relationship between them. 
@@ -129,7 +139,4 @@ In order to get a better idea of the relationships between them, the contributio
 
 It's clear that in the case of Instagram Shorts, there isn't much of a correlation between the hashtag to words ratio and the number of views. On the other hand, there seems to be some amount of positive correlation between the views and the hashtags to words ratio in the case of Youtube Shorts. The Spearman Rank correlation was used on the graphs that aren't scaled to obtain a value of 0.03 with p-value of 0.9, for the correlation between the hashtag to words ratio and the number of views for Instagram Reels, and a value of 0.03 and p-value of 0.85, making both of these small correlations insignificant. Hence, it can be concluded that the hashtag to words ratio, at least on it's own, can't be used to make predictions on how well a video is going to do. 
 
-### The hypothesis
-Spearman’s rank correlation was used to determine the correlation between the views of the videos on Instagram Reels and on Youtube Shorts. It is known that a p-value higher than 0.05 indicates that there's a high likelihood of the correlation being produced by chance. 
 
-### Discussion
