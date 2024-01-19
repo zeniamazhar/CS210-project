@@ -25,17 +25,24 @@ Firstly, the mean, standard deviation, min and max of the likes, comments, and v
 
 ![ig_likes_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/c025e57f-21d9-4fa4-858e-d7db70da7f3c)
 
-#### **Time series showing the number of Instagram Likes on the videos**
+##### Time series showing the number of Instagram Likes on the videos
 
-
+\n
+\n
 ![ig_comments_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/5b590a35-0434-48d0-8299-d6edd3bffbb5)
 
-#### **Time series showing the number of Instagram comments on the videos**
+##### Time series showing the number of Instagram comments on the videos
 
-
+\n
+\n
 ![ig_views_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/f5f2db5d-bed9-4080-a67f-4b99d767abf4)
 
-#### **Time series showing the number of Instagram views on the videos**
+##### Time series showing the number of Instagram views on the videos
+
+\n
+\n
+
+When comparing the 3 graphs, it can be seen that the views follow a very similar pattern to the number of likes. This is expected since getting a higher number of views would increase the likelihood of the video getting likes, as it is exposed to more people. A peak is seen at the same point for the same video in both graphs, which received 1062 likes and 8238 views, making it an outlier in both cases. The comments follow a different trend, with the peaks being present at 9 comments for 2 videos. This may be because I comment on the videos to reply to other people's comments, and sometimes this leads to the people replying to the responses I write, so the number of comments increases and this has little to do with the actual number of people that watched the video and commented on them. 
 
 
 ### The hypothesis
