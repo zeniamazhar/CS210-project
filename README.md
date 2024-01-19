@@ -122,7 +122,7 @@ After making these observations, I decided to go a step further and see if there
 
 ![ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/b5b4af20-c69c-4334-b6be-5a70ddfc6ff5)
 
-In order to get a better idea of the relationships between them, the contribution of the outliers was lowered (MinMaxScaler), or were eliminated entirely (RobustScaler), in the following plots.
+In order to make the datapoints more visible and to get a better idea of the relationship between the variables, the contribution of the outliers was lowered (MinMaxScaler), or were eliminated entirely (RobustScaler), in the following plots. 
 
 
 | Scaler Used  | Instagram Reels                                                                                                                    | Youtube Shorts                                                                                                                     |
@@ -131,6 +131,8 @@ In order to get a better idea of the relationships between them, the contributio
 | MinMaxScaler | ![minmax_ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/a25b0490-c64d-48a4-9b06-fe4c69eb5762) | ![minmax_yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/40c088aa-a309-4701-a132-799c44e29013) |
 
 It's clear that in the case of Instagram Shorts, there isn't much of a correlation between the hashtag to words ratio and the number of views. On the other hand, there seems to be some amount of positive correlation between the views and the hashtags to words ratio in the case of Youtube Shorts. The Spearman Rank correlation was used on the graphs that aren't scaled to obtain a value of 0.03 with p-value of 0.9, for the correlation between the hashtag to words ratio and the number of views for Instagram Reels, and a value of 0.03 and p-value of 0.85, making both of these small correlations insignificant. Hence, it can be concluded that the hashtag to words ratio, at least on it's own, can't be used to make predictions on how well a video is going to do. 
+
+RobustScaler allowed the datapoints to be more viisble, but didn't aid much when it came to the actual relationship between the two variables for either of the platforms. The same is true for MinMaxScaler, but the visibility of the datapoints was more or less the same here when compared to the original graphs.  
 
 ## Conclusion about the hypothesis 
 
