@@ -82,14 +82,25 @@ There is a weak positive correlation between the likes per view for the videos o
 
 
 ### Difference in the Number of Views between the Two Platforms
-The chart shownbelow was made to visualize the difference in the number of views obtained on both platforms.
+The chart shown below was made to visualize the difference in the number of views obtained on both platforms. The difference was calculated by subtracting the number of views on Youtube Shorts by the number of views on Instagram Reels.
 
 ![views_diff_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/2dc2145c-7758-469d-a691-c2a0cc94743d)
 
+Some descriptive statistics of the difference in views can be used to better understand the data, which I have shown below.
+| Descriptive statistics | Views Difference |
+|------------------------|------------------|
+| Standard deviation     | 1902.7           |
+| Mean                   | -185.4           |
+| Min                    | -5274.0          |
+| Max                    | 7917.0           |
 
-### Number of Likes Obtained on Both Platforms 
+It can be seen that the standard deviation is quite high, showing that the number of views obtained on both platforms varies significantly for each video. The mean is -185.7, which is a negative number, which may indicate that the videos are gaining less views on Instagram than on Youtube, but due to the standard deviation being so high, this number may not hold much meaning.
 
-### Number of Views Obtained on Both Platforms 
+### Number of Likes and Views Obtained on Both Platforms 
+The relationship between the number of likes and views obtained on Youtube and Instagram can be compared by plotting them and finding the correlations between the two platforms on each of these variables.
+
+| ![yt_ig_likesplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/3d1b5a2c-7838-4680-a4a6-c227a09b7809) | ![yt_ig_viewsplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/8addd1d4-6d59-4d4e-b0cd-7067a9af0354) |
+|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 
 
 ## Relationship Between Number of Views and Hashtags
