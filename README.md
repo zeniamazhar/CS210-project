@@ -20,12 +20,14 @@ Instagram reels analytics were obtained by using [InstaLoader](https://pypi.org/
 ## Analysis and Discussion
 
 ## Performance of the videos on Instagram Reels
-Firstly, the mean, standard deviation, min and max of the likes, comments, and views of the videos were observed and compared between Youtube and Instagram. Time series plots were made for the likes, views and comments of the Reels against the order in which they were uploaded in order to visualize the performance. 
+Firstly, the mean, standard deviation, min and max of the likes, comments, and views of the videos were observed and compared between Youtube and Instagram. Time series plots were made for the likes, views and comments of the Reels against the order in which they were uploaded in order to visualize the performance.
+
+
 ![ig_likes_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/c025e57f-21d9-4fa4-858e-d7db70da7f3c)
-** Time series showing Instagram Likes **
+**Time series showing Instagram Likes**
 
 ![ig_comments_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/5b590a35-0434-48d0-8299-d6edd3bffbb5)
-** Time series showing Instagram Likes **
+**Time series showing Instagram Likes**
 
 ### The hypothesis
 Spearman’s rank correlation was used to determine the correlation between the views of the videos on Instagram Reels and on Youtube Shorts. It is known that a p-value higher than 0.05 indicates that there's a high likelihood of the correlation being produced by chance. 
