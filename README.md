@@ -24,9 +24,11 @@ Firstly, the mean, standard deviation, min and max of the likes, comments, and v
 
 
 ![ig_likes_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/c025e57f-21d9-4fa4-858e-d7db70da7f3c)
+
 **Time series showing Instagram Likes**
 
 ![ig_comments_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/5b590a35-0434-48d0-8299-d6edd3bffbb5)
+
 **Time series showing Instagram Likes**
 
 ### The hypothesis
