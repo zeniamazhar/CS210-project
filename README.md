@@ -25,11 +25,18 @@ Firstly, the mean, standard deviation, min and max of the likes, comments, and v
 
 ![ig_likes_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/c025e57f-21d9-4fa4-858e-d7db70da7f3c)
 
-**Time series showing Instagram Likes**
+#### **Time series showing the number of Instagram Likes on the videos**
+
 
 ![ig_comments_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/5b590a35-0434-48d0-8299-d6edd3bffbb5)
 
-**Time series showing Instagram Likes**
+#### **Time series showing the number of Instagram comments on the videos**
+
+
+![ig_views_ts](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/f5f2db5d-bed9-4080-a67f-4b99d767abf4)
+
+#### **Time series showing the number of Instagram views on the videos**
+
 
 ### The hypothesis
 Spearman’s rank correlation was used to determine the correlation between the views of the videos on Instagram Reels and on Youtube Shorts. It is known that a p-value higher than 0.05 indicates that there's a high likelihood of the correlation being produced by chance. 
