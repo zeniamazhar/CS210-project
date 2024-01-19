@@ -100,7 +100,6 @@ It can be seen that the standard deviation is quite high, showing that the numbe
 The relationship between the number of likes and views obtained on Youtube and Instagram can be compared by plotting them and finding the correlations between the two platforms on each of these variables.
 
 | ![yt_ig_likesplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/3d1b5a2c-7838-4680-a4a6-c227a09b7809) | ![yt_ig_viewsplot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/8addd1d4-6d59-4d4e-b0cd-7067a9af0354) |
-|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 
 
 ## Relationship Between Number of Views and Hashtags
@@ -128,7 +127,7 @@ In order to get a better idea of the relationships between them, the contributio
 | RobustScaler | ![robust_ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/b1884711-df76-40fc-9dcf-1693a5a0e974) | ![robust_yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/080f5cb5-f28d-4647-bb24-f2e51ef460ad) |
 | MinMaxScaler | ![minmax_ig_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/a25b0490-c64d-48a4-9b06-fe4c69eb5762) | ![minmax_yt_htwr_plot](https://github.com/zeniamazhar/zeniamazhar.github.io/assets/115092854/40c088aa-a309-4701-a132-799c44e29013) |
 
-It's clear that in the case of Instagram Shorts, there isn't much of a correlation between the hashtag to words ratio and the number of views. On the other hand, there seems to be some amount of positive correlation between the views and the hashtags to words ratio in the case of Youtube Shorts. The Spearman Rank correlation was used on the graphs that aren't scaled to obtain a value of 0.03 with p-value of 0.9, for the correlation between the hashtag to words ratio and the number of views for Instagram Reels, and a value of 0.03 and p-value of 0.85, making both of these small correlations insignificant. Hence, it can be concluded that the hashtag to words ratio, at least on it's own, can't be used to make predictions on how well a video is going to do.
+It's clear that in the case of Instagram Shorts, there isn't much of a correlation between the hashtag to words ratio and the number of views. On the other hand, there seems to be some amount of positive correlation between the views and the hashtags to words ratio in the case of Youtube Shorts. The Spearman Rank correlation was used on the graphs that aren't scaled to obtain a value of 0.03 with p-value of 0.9, for the correlation between the hashtag to words ratio and the number of views for Instagram Reels, and a value of 0.03 and p-value of 0.85, making both of these small correlations insignificant. Hence, it can be concluded that the hashtag to words ratio, at least on it's own, can't be used to make predictions on how well a video is going to do. 
 
 ### The hypothesis
 Spearman’s rank correlation was used to determine the correlation between the views of the videos on Instagram Reels and on Youtube Shorts. It is known that a p-value higher than 0.05 indicates that there's a high likelihood of the correlation being produced by chance. 
