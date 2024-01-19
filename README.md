@@ -2,7 +2,7 @@
 ## Analyzing Performance of Videos on Youtube Shorts and Instagram Reels
 
 ## Introduction
-I make art as a hobby, and I post short videos about it on Instagram Reels and Youtube Shorts. The videos I analyzed in this project are exactly the same on both platforms, just with different captions/titles and different music. My main objective was to understand which platform the videos do better on, or if they are performing in a similar manner on both platforms. The code used to obtain the graphs, perform the statistical tests and obtain the descriptive statistics, can be found [here](https://github.com/zeniamazhar/zeniamazhar.github.io/blob/main/CS%20210%20Project%20(code).md)).
+I make art as a hobby, and I post short videos about it on Instagram Reels and Youtube Shorts. The videos I analyzed in this project are exactly the same on both platforms, just with different captions/titles and different music. My main objective was to understand which platform the videos do better on, or if they are performing in a similar manner on both platforms. The code used to obtain the graphs, perform the statistical tests and obtain the descriptive statistics, can be found [here](https://github.com/zeniamazhar/zeniamazhar.github.io/blob/main/CS%20210%20Project%20(code).md).
 
 ## Hypothesis
 
