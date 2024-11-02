@@ -5,5 +5,5 @@ The channel I used on both platforms was my own, where I posted shorts and reels
 <br><br>
 This included obtaining the data from Youtube Shorts and Instagram Reels by using Youtube API V3 and Instaloader, respectively. Afterwards, I cleaned the data and analysed the relationship between the number of hashtags, the likes, and the views each of the videos got on both platforms, as well as some combinations of two or more of these metrics, to see which platform the videos were performing better on.
 <br><br>
-<strong>You can find detailed information and graphs on this website: https://zeniamazhar.github.io/zeniamazhar/</strong>
+<strong>You can find the detailed analysis on this website: https://zeniamazhar.github.io/zeniamazhar/</strong>
 
