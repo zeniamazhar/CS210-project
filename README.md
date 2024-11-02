@@ -3,4 +3,4 @@ My aim with this project was to data from Youtube shorts and Instagram reels by 
 The channel I used on both platforms was my own, where I posted shorts and reels about art/sketches I made. The videos I posted on both platforms were the exact same, except the music used in some cases wasn't always the same.
 This included analysing the relationship between the number of hashtags, the likes, and the views each of the videos got on both platforms, as well as some combinations of two or more of these metrics, to see which platform the videos were performing better on.
 <br>
-**You can find detailed information and graphs on this website: https://zeniamazhar.github.io/zeniamazhar/**
+<strong>You can find detailed information and graphs on this website: https://zeniamazhar.github.io/zeniamazhar/</strong>
