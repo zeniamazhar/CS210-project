@@ -1,4 +1,4 @@
-<h1>Welcome to the project I made for my data science course at Sabanci University!✨</h1> 
+<h1>Welcome to the project I made for my data science course at Sabanci University! ✨</h1> 
 My aim with this project was to data from <strong>Youtube shorts</strong> and <strong>Instagram reels</strong> by using the relevant APIs, and compared them by statistically analysing this data.
 <br><br>
 The channel I used on both platforms was my own, where I posted shorts and reels about art/sketches I made. The videos I posted on both platforms were the exact same, except the music used in some cases wasn't always the same.
