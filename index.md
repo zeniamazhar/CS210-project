@@ -1,6 +1,3 @@
----
-title: Home
----
 
 
 # CS 210 Project
