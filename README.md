@@ -1,4 +1,4 @@
-##📈 Analyzing Performance of Videos on Youtube Shorts and Instagram Reels
+## 📈 Analyzing Performance of Videos on Youtube Shorts and Instagram Reels
 
 
 **Summary**: My aim with this project was to collect data from <strong>Youtube shorts</strong> and <strong>Instagram reels</strong> by using the relevant APIs, and compared them by statistically analysing this data.
